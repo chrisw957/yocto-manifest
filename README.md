@@ -118,6 +118,8 @@ About the Exoflex Console Image
 -------------------------------
 The exoflex-console-image is a basic image which includes the driver for the
 kd035fm LCD display.  You should see "Tux" during boot, followed by the login
-prompt on the LCD.  Login from the serial console and run fb-test to verify
-the LCD is operating in the correct color depth.
+prompt on the LCD.  
+
+Login from the serial console and run fb-test to verify the LCD is operating 
+in the correct color depth.
 
