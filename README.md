@@ -74,11 +74,11 @@ do an awful lot of compilation so make sure you have plenty of space (25GB
 minimum), and expect a day or so of build time depending on your network
 connection.  Don't worry---it is just the first build that takes a while.
 
-    $ bitbake gumstix-console-image
+    $ bitbake exoflex-console-image
 
 If everything goes well, you should have a compressed root filesystem
 tarball as well as kernel and bootloader binaries available in your
-**tmp/deploy/images/{ overo | duovero | pepper }** directory.  If you run into problems, the most likely
+**tmp/deploy/images/overo** directory.  If you run into problems, the most likely
 candidate is missing software packages.  Check out
 http://www.yoctoproject.org/docs/current/yocto-project-qs/yocto-project-qs.html#resources
 for the list of required packages for operating system. Also, take
