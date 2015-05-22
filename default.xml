@@ -5,7 +5,7 @@
   <remote fetch="git://github.com/gumstix" name="gumstix"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="ssh://git@github.com/" name="chrisw957"/>
+  <remote fetch="https://github.com/chrisw957/" name="chrisw957"/>
 
   <default remote="gumstix" revision="default"/>
   <!-- List all the repositories you want to fetch -->
@@ -19,7 +19,7 @@
   <project name="meta-ros" path="poky/meta-ros" remote="bmwcarit" revision="312e6c4ddd76f56fce22a7b9b1a5b0fd8d39c224" upstream="refs/heads/master"/>
   <project name="meta-ti" path="poky/meta-ti" remote="yocto" revision="0a47b71b8c4222ca5136584aed15acbc218b199e" upstream="refs/heads/master"/>
   <project name="poky" remote="yocto" revision="3037db60f79a4b7e34bef14663ffa2523e9f0c03" upstream="refs/heads/dizzy"/>
-  <project name="chrisw957/meta-exoflex.git" path="poky/meta-exoflex" remote="chrisw957" revision="dizzy"/>
+  <project name="meta-exoflex.git" path="poky/meta-exoflex" remote="chrisw957" revision="dizzy"/>
 
 </manifest>
 
