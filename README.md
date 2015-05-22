@@ -1,5 +1,5 @@
-Exoflex Repo Manifests for the Yocto Build System
-=================================================
+Exoflex Repo Manifests for Yocto
+================================
 This repository provides Repo manifests to setup the Yocto build system for 
 building Exoflex (Gumstix Overo) images.
 
