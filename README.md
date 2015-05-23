@@ -94,7 +94,19 @@ specifying the block device (such as /dev/sdc) and the image name
     
 Once this is successful, unmount/eject the card. 
 
-Hooray you are done!
+
+**7. Erase old u-boot env settings**
+
+Put the micro SD card into the exoflex, and power on the system.  Immediately
+press a key to stop u-boot from auto-booting. 
+
+Ease the current u-boot environment settings stored in Flash, then reset the
+exoflex and let it boot normally.
+
+     u-boot> nand erase 240000 20000
+     u-boot> reset
+
+Done!
 
 Staying Up to Date
 ------------------
