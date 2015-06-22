@@ -63,7 +63,7 @@ your connection.
 This copies default configuration information into the **poky/build/conf**
 directory and sets up some environment variables for the build system.
 
-**5.  Build an image:**
+**5.  Build a console image:**
 
 This process downloads several gigabytes of source code and then proceeds to
 do an awful lot of compilation so make sure you have plenty of space (25GB
@@ -81,8 +81,14 @@ for the list of required packages for operating system. Also, take
 a look to be sure your operating system is supported:
 https://wiki.yoctoproject.org/wiki/Distribution_Support
 
+**6.  Build the X11 image:**
 
-**6. Create a bootable micro SD card:**
+This is the graphical image which actually runs the exoflex appliction.  It is
+considerably more complex, and takes longer to build.
+
+    $ bitbake exoflex-x11-image
+
+**7. Create a bootable micro SD card:**
 
 Pop in your micro SD card to your card writer, and find out the location of 
 the block device by running `dmesg`. Now you can run the script below,
@@ -95,7 +101,7 @@ specifying the block device (such as /dev/sdc) and the image name
 Once this is successful, unmount/eject the card. 
 
 
-**7. Erase old u-boot env settings**
+**8. Erase old u-boot env settings**
 
 Put the micro SD card into the exoflex, and power on the system.  Immediately
 press a key to stop u-boot from auto-booting. 
