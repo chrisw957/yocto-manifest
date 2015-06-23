@@ -81,12 +81,13 @@ for the list of required packages for operating system. Also, take
 a look to be sure your operating system is supported:
 https://wiki.yoctoproject.org/wiki/Distribution_Support
 
-**6.  Build the X11 image:**
+**6.  Build the Exofile image:**
 
 This is the graphical image which actually runs the exoflex appliction.  It is
-considerably more complex, and takes longer to build.
+considerably more complex, and takes longer to build.  We call it di-image because
+that what is was called in the older repository.
 
-    $ bitbake exoflex-x11-image
+    $ bitbake di-image
 
 **7. Create a bootable micro SD card:**
 
@@ -96,7 +97,7 @@ specifying the block device (such as /dev/sdc) and the image name
 (such as exoflex-console-image-overo)
 
     $ cd ~/yocto/poky/meta-exoflex/scripts
-    $ sudo ./mkcard.sh <block device> <image> 
+    $ sudo ./mkcard.sh <block device> di-image-overo 
     
 Once this is successful, unmount/eject the card. 
 
