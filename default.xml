@@ -17,6 +17,7 @@
   <project name="meta-gumstix-extras" path="poky/meta-gumstix-extras" revision="a030aa1397ce0e437061e5ced23f12e2d2c7d354" upstream="refs/heads/dizzy"/>
   <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" revision="2ebb8752f378c9987b0ece5a14915d703b872c1d" upstream="refs/heads/dizzy"/>
   <project name="meta-ti" path="poky/meta-ti" remote="yocto" revision="0a47b71b8c4222ca5136584aed15acbc218b199e" upstream="refs/heads/master"/>
+  <project name="meta-java" path="poky/meta-java" remote="yocto" revision="71bf807f948348650ce1711776a3587fac916b58" upstream="refs/heads/master"/>
   <project name="poky" remote="yocto" revision="3037db60f79a4b7e34bef14663ffa2523e9f0c03" upstream="refs/heads/dizzy"/>
   <project name="meta-exoflex" path="poky/meta-exoflex" remote="chrisw957" revision="dizzy"/>
 
